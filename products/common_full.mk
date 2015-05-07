@@ -4,12 +4,12 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bootanimations/BOOTANIMATION-1280x768.zip:system/media/bootanimation.zip
 endif
 
-ifneq ($(filter aosip_mako,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_mako aosip_grouper,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bootanimations/BOOTANIMATION-768x480.zip:system/media/bootanimation.zip
 endif
 
-ifneq ($(filter aosip_shamu aosip_grouper aosip_manta,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_shamu aosip_manta,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bootanimations/BOOTANIMATION-1440x2560.zip:system/media/bootanimation.zip
 endif

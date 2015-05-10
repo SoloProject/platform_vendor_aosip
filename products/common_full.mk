@@ -1,7 +1,8 @@
 # Copy prebuilt files.
 ifneq ($(filter aosip_hammerhead,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/aosip/prebuilt/common/bootanimations/BOOTANIMATION-1280x768.zip:system/media/bootanimation.zip
+    vendor/aosip/prebuilt/common/bootanimations/BOOTANIMATION-1280x768.zip:system/media/bootanimation.zip \
+        vendor/aosip/prebuilt/common/app/OmaDmclient.apk:system/app/OmaDmclient.apk
 endif
 
 ifneq ($(filter aosip_mako aosip_grouper,$(TARGET_PRODUCT)),)

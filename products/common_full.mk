@@ -37,8 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/aosip/system/overlay/Maui_settings.apk:system/vendor/overlay/Maui_settings.apk \
-    vendor/aosip/system/overlay/Maui_settings.apk:system/app/Maui_settings.apk
+    vendor/aosip/system/overlay/Maui_Settings.apk:system/vendor/overlay/Maui_Settings.apk \
+    vendor/aosip/system/overlay/Maui_Frameworks.apk:system/vendor/overlay/Maui_Frameworks.apk \
+    vendor/aosip/system/overlay/Maui_SystemUI.apk:system/vendor/overlay/Maui_SystemUI.apk \
+    vendor/aosip/system/overlay/Maui.zip:system/app/Maui.zip
 
 # Additional prebuilt APKs and libs
 ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako,$(TARGET_PRODUCT)),)

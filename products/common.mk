@@ -17,7 +17,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     
 # Launcher3
 PRODUCT_PACKAGES += \
-    Launcher3
+    SlimLauncher
 
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \

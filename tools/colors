@@ -21,7 +21,3 @@ if [ ! "$BUILD_WITH_COLORS" = "0" ]; then
     ylwrev=${rev}$(tput setaf 3)
     blurev=${rev}$(tput setaf 4)
 fi
-<<<<<<< HEAD
-
-=======
->>>>>>> 745d83e... Add changelog generator (1/2)

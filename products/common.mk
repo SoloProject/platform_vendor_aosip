@@ -17,7 +17,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     
 # Launcher3
 PRODUCT_PACKAGES += \
-    SlimLauncher
+    SlimLauncher \
+    LockClock
 
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \

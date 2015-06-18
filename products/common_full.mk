@@ -5,7 +5,7 @@ PRODUCT_COPY_FILES += \
         vendor/aosip/prebuilt/common/app/OmaDmclient.apk:system/app/OmaDmclient.apk
 endif
 
-ifneq ($(filter aosip_mako aosip_grouper,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_mako aosip_grouper aosip_flo,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/bootanimations/BOOTANIMATION-768x480.zip:system/media/bootanimation.zip
 endif
@@ -39,13 +39,13 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
 
 # Additional prebuilt APKs and libs
-ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako aosip_flo,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     GoogleCamera
 endif
 
 # Google Camera dependancies
-ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako,$(TARGET_PRODUCT)),)
+ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako aosip_flo,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/aosip/proprietary/common/lib/libgcam.so:system/lib/libgcam.so \
     vendor/aosip/proprietary/common/lib/libgcam_swig_jni.so:system/lib/libgcam_swig_jni.so \

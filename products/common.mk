@@ -47,5 +47,9 @@ PRODUCT_COPY_FILES += \
 #Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosip/overlay/common
 
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
 # Inherit common product build prop overrides
 -include vendor/aosip/products/common_full.mk

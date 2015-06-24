@@ -37,6 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/aosip/prebuilt/common/app/Kernel_Auditor.apk:system/app/kerneladiutor.apk \
 
 # Additional prebuilt APKs and libs
 ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako aosip_flo,$(TARGET_PRODUCT)),)

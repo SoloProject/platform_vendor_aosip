@@ -63,4 +63,3 @@ endif
 
 # Inherit common product build prop overrides
 -include vendor/aosip/products/common_versions.mk
--include vendor/aosip/products/themes_common.mk

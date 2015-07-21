@@ -38,5 +38,11 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
 
+# Google apps
+PRODUCT_COPY_FILES += \
+    vendor/illusion/overlay/common/packages/apps/Messenger.apk:system/priv-app/Messenger.apk \
+    vendor/illusion/overlay/common/packages/apps/Launcher.apk:system/app/Google_Launcher.apk \
+    vendor/illusion/overlay/common/packages/apps/Callendar.apk:system/app/Google_Callendar.apk
+
 # Inherit common product build prop overrides
 -include vendor/aosip/products/common_versions.mk

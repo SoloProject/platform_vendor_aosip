@@ -14,15 +14,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
     dalvik.vm.image-dex2oat-filter=everything \
     dalvik.vm.dex2oat-filter=everything
-    
-# Launcher3
-PRODUCT_PACKAGES += \
-    SlimLauncher \
-    LockClock
-
-# Auto-rotate
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/aosip/overlay/Launcher3
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -33,11 +24,6 @@ ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk
-endif
-
-# Chromium Prebuilt
-ifeq ($(PRODUCT_PREBUILT_WEBVIEWCHROMIUM),yes)
--include prebuilts/chromium/$(TARGET_DEVICE)/chromium_prebuilt.mk
 endif
 
 # Latin IME lib

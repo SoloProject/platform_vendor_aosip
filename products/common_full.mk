@@ -38,28 +38,5 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
 
-# Additional prebuilt APKs and libs
-ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako aosip_flo,$(TARGET_PRODUCT)),)
-PRODUCT_PACKAGES += \
-    GoogleCamera
-endif
-
-# Google Camera dependancies
-ifneq ($(filter aosip_shamu aosip_hammerhead aosip_mako aosip_flo,$(TARGET_PRODUCT)),)
-PRODUCT_COPY_FILES += \
-    vendor/aosip/proprietary/common/lib/libgcam.so:system/lib/libgcam.so \
-    vendor/aosip/proprietary/common/lib/libgcam_swig_jni.so:system/lib/libgcam_swig_jni.so \
-    vendor/aosip/proprietary/common/lib/libjni_jpegutil.so:system/lib/libjni_jpegutil.so \
-    vendor/aosip/proprietary/common/lib/libjni_tinyplanet.so:system/lib/libjni_tinyplanet.so \
-    vendor/aosip/proprietary/common/lib/libjpeg.so:system/lib/libjpeg.so \
-    vendor/aosip/proprietary/common/lib/liblightcycle.so:system/lib/liblightcycle.so \
-    vendor/aosip/proprietary/common/lib/libnativehelper_compat_libc++.so:system/lib/libnativehelper_compat_libc++.so \
-    vendor/aosip/proprietary/common/lib/librefocus.so:system/lib/librefocus.so \
-    vendor/aosip/proprietary/common/lib/librs.layered_filter_f32.so:system/lib/librs.layered_filter_f32.so \
-    vendor/aosip/proprietary/common/lib/librs.layered_filter_fast_f32.so:system/lib/librs.layered_filter_fast_f32.so \
-    vendor/aosip/proprietary/common/lib/librsjni.so:system/lib/librsjni.so \
-    vendor/aosip/proprietary/common/lib/libRSSupport.so:system/lib/libRSSupport.so
-endif
-
 # Inherit common product build prop overrides
 -include vendor/aosip/products/common_versions.mk

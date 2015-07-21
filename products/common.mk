@@ -20,10 +20,6 @@ PRODUCT_PACKAGES += \
     SlimLauncher \
     LockClock
 
-# Busybox
-PRODUCT_PACKAGES += \
-    Busybox
-
 # Auto-rotate
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosip/overlay/Launcher3

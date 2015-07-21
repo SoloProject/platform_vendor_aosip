@@ -40,9 +40,9 @@ PRODUCT_COPY_FILES += \
 
 # Google apps
 PRODUCT_COPY_FILES += \
-    vendor/illusion/overlay/common/packages/apps/Messenger.apk:system/priv-app/Messenger.apk \
-    vendor/illusion/overlay/common/packages/apps/Launcher.apk:system/app/Google_Launcher.apk \
-    vendor/illusion/overlay/common/packages/apps/Callendar.apk:system/app/Google_Callendar.apk
+    vendor/aosip/overlay/common/packages/apps/Messenger.apk:system/priv-app/Messenger.apk \
+    vendor/aosip/overlay/common/packages/apps/Launcher.apk:system/app/Google_Launcher.apk \
+    vendor/aosip/overlay/common/packages/apps/Callendar.apk:system/app/Google_Callendar.apk
 
 # Inherit common product build prop overrides
 -include vendor/aosip/products/common_versions.mk

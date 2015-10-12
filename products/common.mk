@@ -13,7 +13,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
     dalvik.vm.image-dex2oat-filter=everything \
-    dalvik.vm.dex2oat-filter=everything
+    dalvik.vm.dex2oat-filter=everything \
+    ro.adb.secure=1 \
+    persist.service.adb.enable=1 \
+    persist.sys.usb.config=mtp,adb \
+
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

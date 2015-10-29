@@ -22,5 +22,16 @@ PRODUCT_COPY_FILES += \
     vendor/aosip/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/aosip/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    Eleven \
+    Launcher3 \
+    LockClock \
+    AudioFX
+
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
+
 # Inherit common product build prop overrides
 -include vendor/aosip/products/common_versions.mk
